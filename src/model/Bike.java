@@ -2,7 +2,7 @@ package model;
 
 public class Bike
 {
-	//Declaration Section
+	//Constructor Section
 	private String rideName;
 	private double distance;
 	private int mins;
@@ -22,4 +22,55 @@ public class Bike
 		this.elevationGain = -1;
 		this.avgSpeed = -1;
 	}
+	
+	public String getRideName()
+	{
+		return rideName;
+	}
+	
+	public double getDistance()
+	{
+		return distance;
+	}
+	
+	public int getMins()
+	{
+		return mins;
+	}
+	
+	public int getElevationGain()
+	{
+		return elevationGain;
+	}
+	
+	public double getAvgSpeed()
+	{
+		return avgSpeed;
+	}
+	
+	public void setRideName(String rideName)
+	{
+		this.rideName = rideName;
+	}
+	
+	public void setDistance(double distance)
+	{
+		this.distance = distance;
+	}
+	
+	public void setMins(int mins)
+	{
+		this.mins = mins;
+	}
+	
+	public void setElevationGain(int elevationGain)
+	{
+		this.elevationGain = elevationGain;
+	}
+	
+	public void setAvgSpeed(double avgSpeed)
+	{
+		this.avgSpeed = avgSpeed;
+	}
+	
 }
