@@ -22,7 +22,7 @@ public class Bike
 		this.elevationGain = -1;
 		this.avgSpeed = -1;
 	}
-	
+
 	public String getRideName()
 	{
 		return rideName;
