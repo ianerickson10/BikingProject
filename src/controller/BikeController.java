@@ -24,13 +24,21 @@ public class BikeController
 	 */
 	public void start()
 	{
-		//String userInput = JOptionPane.showInputDialog("Good job, you just went on a ride. What would you like to title it?");
+		//loopy();
 		
-		//String userInput = JOptionPane.showInputDialog("How many miles did you ride?");
+		Bike distance = new Distance();
+		String response = JOptionPane.showInputDialog(null, "How many miles did you ride?");
+		while(!validDouble(response))
+		{
+			response = JOptionPane.showInputDialog(null, "Type a valid number. Ex: 2.3");
+		}
+		distance.setDistance(Double.parseDouble(response));
 		
-		loopy();
+		response = JOptionPane.showInputDialog(null, "How long was your ride, in mins?");
+		while()
 	}
 	
+
 	private void loopy()
 	{
 		//define variable before the loop
@@ -38,6 +46,7 @@ public class BikeController
 		int aNumber = 1;
 		while (!isFinished)
 		{
+			
 			JOptionPane.showMessageDialog(null, aNumber);
 			
 			aNumber += 1;
@@ -52,5 +61,9 @@ public class BikeController
 				JOptionPane.showMessageDialog(null, "Yaaaaaaaaaaayyyyyyyy");
 			}
 		}
+		
+		
 	}
+
+	
 }
