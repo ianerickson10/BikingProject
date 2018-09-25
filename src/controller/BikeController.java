@@ -24,10 +24,33 @@ public class BikeController
 	 */
 	public void start()
 	{
-		String userInput = JOptionPane.showInputDialog("Good job, you just went on a ride. What would you like to title it?");
+		//String userInput = JOptionPane.showInputDialog("Good job, you just went on a ride. What would you like to title it?");
 		
-		String userInput = JOptionPane.showInputDialog("How many miles did you ride?");
+		//String userInput = JOptionPane.showInputDialog("How many miles did you ride?");
 		
-		
+		loopy();
+	}
+	
+	private void loopy()
+	{
+		//define variable before the loop
+		boolean isFinished = false;
+		int aNumber = 1;
+		while (!isFinished)
+		{
+			JOptionPane.showMessageDialog(null, aNumber);
+			
+			aNumber += 1;
+			
+			if(aNumber > 25)
+			{
+				isFinished = true;
+			}	
+			
+			if(isFinished)
+			{
+				JOptionPane.showMessageDialog(null, "Yaaaaaaaaaaayyyyyyyy");
+			}
+		}
 	}
 }
