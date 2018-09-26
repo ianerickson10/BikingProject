@@ -24,18 +24,10 @@ public class BikeController
 	 */
 	public void start()
 	{
-		//loopy();
+		loopy();
 		
-		Bike distance = new Distance();
-		String response = JOptionPane.showInputDialog(null, "How many miles did you ride?");
-		while(!validDouble(response))
-		{
-			response = JOptionPane.showInputDialog(null, "Type a valid number. Ex: 2.3");
-		}
-		distance.setDistance(Double.parseDouble(response));
 		
-		response = JOptionPane.showInputDialog(null, "How long was your ride, in mins?");
-		while()
+		
 	}
 	
 
@@ -43,7 +35,8 @@ public class BikeController
 	{
 		//define variable before the loop
 		boolean isFinished = false;
-		int aNumber = 1;
+		int aNumber = 0;
+		Bike distance = new Bike();
 		while (!isFinished)
 		{
 			
@@ -62,6 +55,18 @@ public class BikeController
 			}
 		}
 		
+		String response = JOptionPane.showInputDialog(null, "How many miles did you ride?");
+		while(!validDouble(response))
+		{
+			response = JOptionPane.showInputDialog(null, "Type a valid number. Ex: 2.3");
+		}
+		distance.setDistance(Double.parseDouble(response));
+		
+		response = JOptionPane.showInputDialog(null, "How long was your ride, in mins?");
+		while(!validInt(response))
+		{
+			response = JOptionPane.showInputDialog(null, "Type a valid number. Ex: 65");
+		}
 		
 	}
 
