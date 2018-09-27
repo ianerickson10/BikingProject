@@ -25,9 +25,6 @@ public class BikeController
 	public void start()
 	{
 		loopy();
-		
-		
-		
 	}
 	
 
@@ -37,6 +34,7 @@ public class BikeController
 		boolean isFinished = false;
 		int aNumber = 0;
 		Bike distance = new Bike();
+		Bike mins = new Bike();
 		while (!isFinished)
 		{
 			
@@ -67,7 +65,7 @@ public class BikeController
 		{
 			response = JOptionPane.showInputDialog(null, "Type a valid number. Ex: 65");
 		}
-			
+		//mins.setMins(int.parseInt(response));
 			
 	}
 	
@@ -104,4 +102,5 @@ public class BikeController
 		
 		return isValid;
 	}
+
 }
