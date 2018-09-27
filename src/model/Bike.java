@@ -78,6 +78,7 @@ public class Bike
 		String description = "Here is your ride.";
 		description += " You rode " + distance + " miles.";
 		description += " And you rode for " + mins + " Minutes.";
+		description += " Your average speed was " + avgSpeed + " miles per hour";
 		//add additional variables here
 		return description;
 	}
