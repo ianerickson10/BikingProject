@@ -7,8 +7,6 @@ import javax.swing.JOptionPane;
 public class BikeController
 {
 	//Declarations
-	private Bike bikeDefault;
-	private Bike bikeUser;
 	
 	
 	/**
@@ -24,7 +22,8 @@ public class BikeController
 	 */
 	public void start()
 	{
-		loopy();
+		//loopy();
+		AskUser();
 	}
 	
 
@@ -33,8 +32,6 @@ public class BikeController
 		//define variable before the loop
 		boolean isFinished = false;
 		int aNumber = 0;
-		Bike distance = new Bike();
-		Bike mins = new Bike();
 		while (!isFinished)
 		{
 			
@@ -52,22 +49,40 @@ public class BikeController
 				JOptionPane.showMessageDialog(null, "Yaaaaaaaaaaayyyyyyyy");
 			}
 		}
+	}
+	
+	private void AskUser()
+	{
+		Bike userRide = new Bike();
 		
 		String response = JOptionPane.showInputDialog(null, "How many miles did you ride?");
 		while(!validDouble(response))
 		{
 			response = JOptionPane.showInputDialog(null, "Type a valid number. Ex: 2.3");
 		}
-		distance.setDistance(Double.parseDouble(response));
+		userRide.setDistance(Double.parseDouble(response));
 		
 		response = JOptionPane.showInputDialog(null, "How long was your ride, in mins?");
 		while(!validInt(response))
 		{
 			response = JOptionPane.showInputDialog(null, "Type a valid number. Ex: 65");
 		}
-		//mins.setMins(int.parseInt(response));
-			
+		//userRide.setMins(int.parseInt(response));
+		
+		response = JOptionPane.showInputDialog(null, "What was your average speed?");
+		while(!validDouble(response))
+		{
+			response = JOptionPane.showInputDialog(null, "Type a valid number. Ex: 8.4");
+		}
+		userRide.setAvgSpeed(Double.parseDouble(response));
+		
+		
+		
+		
+		
+		
 	}
+	
 	
 	public boolean validInt(String maybeInt)
 	{

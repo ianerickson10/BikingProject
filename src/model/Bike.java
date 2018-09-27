@@ -73,4 +73,13 @@ public class Bike
 		this.avgSpeed = avgSpeed;
 	}
 	
+	public String toString()
+	{
+		String description = "Here is your ride.";
+		description += " You rode " + distance + " miles.";
+		description += " And you rode for " + mins + " Minutes.";
+		//add additional variables here
+		return description;
+	}
+	
 }
