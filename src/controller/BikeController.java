@@ -23,8 +23,8 @@ public class BikeController
 	public void start()
 	{
 		//loopy();
-		//AskUser();
-		ForLoop();
+		AskUser();
+		//ForLoop();
 	}
 	
 	/**
