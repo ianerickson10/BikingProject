@@ -22,8 +22,9 @@ public class BikeController
 	 */
 	public void start()
 	{
-		loopy();
-		//AskUser();
+		//loopy();
+		AskUser();
+		//ForLoop();
 	}
 	
 	/**
@@ -52,10 +53,7 @@ public class BikeController
 			}
 		}
 		
-		for(int loop = 0; loop >= 10; loop +=1)
-		{
-			JOptionPane.showMessageDialog(null, "test");
-		}
+		
 	}
 	
 	/**
@@ -86,13 +84,24 @@ public class BikeController
 		}
 		userRide.setAvgSpeed(Double.parseDouble(response));
 		
-		
-		
+		response = JOptionPane.showInputDialog(null, "What was your elevation gain?");
+		while(!validInt(response))
+		{
+			response = JOptionPane.showInputDialog(null, "Type a valid number. Ex: 726");
+		}
+		userRide.setElevationGain(Integer.parseInt(response));
 		
 		
 		
 	}
 	
+	private void ForLoop()
+	{
+		for(int loop = 0; loop >= 10; loop +=1)
+		{
+			JOptionPane.showMessageDialog(null, "test");
+		}
+	}
 	
 	public boolean validInt(String maybeInt)
 	{

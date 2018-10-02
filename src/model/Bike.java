@@ -79,6 +79,7 @@ public class Bike
 		description += " You rode " + distance + " miles.";
 		description += " And you rode for " + mins + " Minutes.";
 		description += " Your average speed was " + avgSpeed + " miles per hour";
+		description += " "
 		//add additional variables here
 		return description;
 	}
