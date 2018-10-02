@@ -22,11 +22,13 @@ public class BikeController
 	 */
 	public void start()
 	{
-		//loopy();
-		AskUser();
+		loopy();
+		//AskUser();
 	}
 	
-
+	/**
+	 * Testing out loops
+	 */
 	private void loopy()
 	{
 		//define variable before the loop
@@ -49,8 +51,16 @@ public class BikeController
 				JOptionPane.showMessageDialog(null, "Yaaaaaaaaaaayyyyyyyy");
 			}
 		}
+		
+		for(int loop = 0; loop >= 10; loop +=1)
+		{
+			JOptionPane.showMessageDialog(null, "test");
+		}
 	}
 	
+	/**
+	 * This is where the user input is taken and stored
+	 */
 	private void AskUser()
 	{
 		Bike userRide = new Bike();
@@ -67,7 +77,7 @@ public class BikeController
 		{
 			response = JOptionPane.showInputDialog(null, "Type a valid number. Ex: 65");
 		}
-		//userRide.setMins(int.parseInt(response));
+		userRide.setMins(Integer.parseInt(response));
 		
 		response = JOptionPane.showInputDialog(null, "What was your average speed?");
 		while(!validDouble(response))
