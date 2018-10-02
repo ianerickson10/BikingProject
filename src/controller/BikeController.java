@@ -23,8 +23,8 @@ public class BikeController
 	public void start()
 	{
 		//loopy();
-		AskUser();
-		//ForLoop();
+		//AskUser();
+		ForLoop();
 	}
 	
 	/**
@@ -97,7 +97,7 @@ public class BikeController
 	
 	private void ForLoop()
 	{
-		for(int loop = 0; loop >= 10; loop +=1)
+		for(int loop = 1; loop < 10; loop +=1)
 		{
 			JOptionPane.showMessageDialog(null, "test");
 		}
