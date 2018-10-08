@@ -3,6 +3,7 @@ package controller;
 //Import section
 import model.Bike;
 import javax.swing.JOptionPane;
+import java.util.ArrayList;
 
 public class BikeController
 {
@@ -101,6 +102,25 @@ public class BikeController
 		{
 			JOptionPane.showMessageDialog(null, "test");
 		}
+	}
+	
+	private void MultiRide()
+	{
+		ArrayList<Bike> userRides = new ArrayList<Bike>();
+		
+		Bike sampleBike = new Bike();
+		Bike otherBike = new Bike();
+		
+		userRides.add(sampleBike);
+		userRides.add(sampleBike);
+		userRides.add(otherBike);
+			
+		for (Bike current : userRides)
+		{
+			JOptionPane.showMessageDialog(null, "This ride is named " + current.getRideName());
+		}
+		
+		
 	}
 	
 	public boolean validInt(String maybeInt)
