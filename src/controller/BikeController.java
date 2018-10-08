@@ -24,8 +24,10 @@ public class BikeController
 	public void start()
 	{
 		//loopy();
-		AskUser();
+		//AskUser();
 		//ForLoop();
+		//MultiRide();
+		//ArrayMethod();
 	}
 	
 	/**
@@ -123,6 +125,12 @@ public class BikeController
 		
 	}
 	
+	private void ArrayMethod()
+	{
+		
+		
+	}
+	
 	public boolean validInt(String maybeInt)
 	{
 		boolean isValid = false;
@@ -156,5 +164,5 @@ public class BikeController
 		
 		return isValid;
 	}
-
+ 
 }
