@@ -98,6 +98,9 @@ public class BikeController
 		
 	}
 	
+	/**
+	 * this tests out a for loop
+	 */
 	private void ForLoop()
 	{
 		for(int loop = 1; loop < 10; loop +=1)
@@ -106,6 +109,9 @@ public class BikeController
 		}
 	}
 	
+	/**
+	 * makes it possible to store multiple rides using an array list
+	 */
 	private void MultiRide()
 	{
 		ArrayList<Bike> userRides = new ArrayList<Bike>();
